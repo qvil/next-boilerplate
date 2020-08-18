@@ -17,11 +17,13 @@ Modern & Lightweight Next.js boilerplate
 
 ## Folder structure
 
+```
 public
 src
 ├── components
 ├── pages
 │ └── api
+```
 
 ## Coding Convention
 
