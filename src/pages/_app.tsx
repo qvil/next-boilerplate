@@ -1,5 +1,7 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from "next/app";
+import { wrapper } from "src/redux/store";
+import { appWithTranslation } from "src/lib/i18n";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />;
@@ -17,4 +19,4 @@ function MyApp({ Component, pageProps }: AppProps) {
 //   return { ...appProps }
 // }
 
-export default MyApp;
+export default wrapper.withRedux(appWithTranslation(MyApp));

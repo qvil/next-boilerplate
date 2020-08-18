@@ -2,17 +2,24 @@ import {
   NextPage,
   // GetStaticProps,
   // GetStaticPaths,
-  // GetServerSideProps,
+  GetServerSideProps,
 } from "next";
+import { WithTranslation } from "next-i18next";
+
 import Button from "src/components/Button";
+import { withTranslation } from "src/lib/i18n";
+import { wrapper } from "src/redux/store";
+import { setSetting } from "src/redux/slices/settingSlice";
 
-interface IndexPageProps {}
+interface IndexPageProps extends WithTranslation {}
 
-const IndexPage: NextPage<IndexPageProps> = () => {
+const IndexPage: NextPage<IndexPageProps> = ({ t }) => {
   return (
     <div>
       <h1>IndexPage</h1>
       <Button>Custom Button</Button>
+      <h2>i18n</h2>
+      <div>{t("hello")}</div>
     </div>
   );
 };
@@ -21,6 +28,13 @@ const IndexPage: NextPage<IndexPageProps> = () => {
 
 // export const getStaticPaths: GetStaticPaths = async () => {};
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {};
+export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps(
+  async ({ store, req, res, ...etc }) => {
+    const dispatch = store.dispatch;
+    dispatch(setSetting({ key: "language", value: "ko_KR" }));
 
-export default IndexPage;
+    return { props: {} };
+  }
+);
+
+export default withTranslation()(IndexPage);

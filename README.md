@@ -7,22 +7,39 @@ Modern & Lightweight Next.js boilerplate
 - Next
 - Typescript
 - Absolute Imports
-<!-- - Redux
-- ssr
-- Async thunk?
+<!-- - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk)) -->
+- Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
 - i18n(Custom server)
-- Fetcher
+<!-- - Fetcher
 - Swr
 - Prerender with revalidate -->
 
 ## Folder structure
 
 ```
-public
-src
-├── components
-├── pages
-│ └── api
+
+├── public
+│ └── static
+│   └── locales
+│     └── {locale}
+│       └── {namespace}.json
+├── src
+│ └── components
+│ └── constants
+│ └── lib
+│   └── i18n.ts
+│ └── pages
+│   └── api
+│ └── redux
+│   └── slices
+│   └── reducer.ts
+│   └── store.ts
+│ └── types
+│   └── index.d.ts
+│ └── .gitignore
+│ └── package.json
+│ └── tsconfig.json
+└── README.md
 ```
 
 ## Coding Convention
