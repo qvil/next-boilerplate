@@ -7,14 +7,20 @@ Modern & Lightweight Next.js boilerplate
 - Next
 - Typescript
 - Absolute Imports
-- Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
-- i18n(Custom server)
+- State Management: Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
+- i18n(next-i18next)
 - Environment Variables(.env)
-- Styled Components(JSS) - SSR, css prop
-<!-- - Fetcher
+- Style: Styled Components(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google)
+<!--
+- Redux(Async(thunk))
+- Fetcher
 - Swr
-- Prerender with revalidate -->
-<!-- - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk)) -->
+- Prerender with revalidate
+- Time
+- Test
+- Custom server
+- Storybook?
+  -->
 
 ## Folder structure
 
@@ -37,7 +43,6 @@ Modern & Lightweight Next.js boilerplate
 │   └── reducer.ts
 │   └── store.ts
 │ └── types
-│   └── index.d.ts
 │ └── .gitignore
 │ └── package.json
 │ └── tsconfig.json
