@@ -1,5 +1,3 @@
-const nextConfig = {
+module.exports = {
   tralingSlash: true,
 };
-
-module.exports = nextConfig;
