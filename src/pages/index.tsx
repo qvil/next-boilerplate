@@ -20,6 +20,9 @@ const IndexPage: NextPage<IndexPageProps> = ({ t }) => {
       <Button>Custom Button</Button>
       <h2>i18n</h2>
       <div>{t("hello")}</div>
+      <h2>.env</h2>
+      <div>NODE_ENV: {process.env.NODE_ENV}</div>
+      <div>NEXT_PUBLIC_API_URL: {process.env.NEXT_PUBLIC_API_URL}</div>
     </div>
   );
 };

@@ -7,12 +7,13 @@ Modern & Lightweight Next.js boilerplate
 - Next
 - Typescript
 - Absolute Imports
-<!-- - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk)) -->
 - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
 - i18n(Custom server)
+- Environment Variables(.env)
 <!-- - Fetcher
 - Swr
 - Prerender with revalidate -->
+<!-- - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk)) -->
 
 ## Folder structure
 
