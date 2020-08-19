@@ -1,4 +1,10 @@
-import Document, { DocumentContext } from "next/document";
+import Document, {
+  DocumentContext,
+  Html,
+  Head,
+  NextScript,
+  Main,
+} from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 class MyDocument extends Document {
@@ -26,6 +32,27 @@ class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  loadFont = () => (
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  );
+
+  render() {
+    const { loadFont } = this;
+
+    return (
+      <Html>
+        <Head>{loadFont()}</Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }
 
