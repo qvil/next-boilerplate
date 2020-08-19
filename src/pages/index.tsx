@@ -4,25 +4,28 @@ import {
   // GetStaticPaths,
   GetServerSideProps,
 } from "next";
-import { WithTranslation } from "next-i18next";
 
-import Button from "src/components/Button";
-import { withTranslation } from "src/lib/i18n";
 import { wrapper } from "src/redux/store";
 import { setSetting } from "src/redux/slices/settingSlice";
+import Link from "next/link";
 
-interface IndexPageProps extends WithTranslation {}
+const features = ["i18n", "env", "styled-components"];
 
-const IndexPage: NextPage<IndexPageProps> = ({ t }) => {
+interface IndexPageProps {}
+
+const IndexPage: NextPage<IndexPageProps> = () => {
   return (
     <div>
-      <h1>IndexPage</h1>
-      <Button>Custom Button</Button>
-      <h2>i18n</h2>
-      <div>{t("hello")}</div>
-      <h2>.env</h2>
-      <div>NODE_ENV: {process.env.NODE_ENV}</div>
-      <div>NEXT_PUBLIC_API_URL: {process.env.NEXT_PUBLIC_API_URL}</div>
+      <h2>Features</h2>
+      <ol>
+        {features.map((feature, index) => (
+          <Link key={index} href={feature}>
+            <a>
+              <li>{feature}</li>
+            </a>
+          </Link>
+        ))}
+      </ol>
     </div>
   );
 };
@@ -40,4 +43,4 @@ export const getServerSideProps: GetServerSideProps = wrapper.getServerSideProps
   }
 );
 
-export default withTranslation()(IndexPage);
+export default IndexPage;

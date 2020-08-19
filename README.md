@@ -10,6 +10,7 @@ Modern & Lightweight Next.js boilerplate
 - Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
 - i18n(Custom server)
 - Environment Variables(.env)
+- Styled Components(JSS) - SSR, css prop
 <!-- - Fetcher
 - Swr
 - Prerender with revalidate -->

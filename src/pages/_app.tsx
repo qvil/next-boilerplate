@@ -1,10 +1,17 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from "next/app";
+
 import { wrapper } from "src/redux/store";
 import { appWithTranslation } from "src/lib/i18n";
+import Header from "src/components/Header";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <>
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
 }
 
 // Only uncomment this method if you have blocking data requirements for

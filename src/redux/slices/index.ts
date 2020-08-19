@@ -1,1 +1,1 @@
-export { default as setting } from "./settingSlice";
+export { reducer as setting } from "./settingSlice";
