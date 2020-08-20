@@ -1,9 +1,10 @@
-import { setting } from "src/redux/slices";
+import { setting, user } from "src/redux/slices";
 import { combineReducers } from "redux";
 import { HYDRATE } from "next-redux-wrapper";
 
 const combinedReducer = combineReducers({
   setting,
+  user,
 });
 
 const reducer = (state, action) => {

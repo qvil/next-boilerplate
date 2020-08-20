@@ -1,17 +1,22 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { defaultLanguage } from "src/lib/i18n";
-import { SetSettingType, LanguageType } from "src/types";
+import { LanguageType } from "src/types";
 
-// State
+const name = "setting";
+
+// Types
 export interface SettingState {
   language: LanguageType;
 }
+
+export type SetSettingType = { key: string; value: any };
+
 const initialState: SettingState = {
   language: defaultLanguage,
 };
 
 const settingSlice = createSlice({
-  name: "setting",
+  name,
   initialState,
   reducers: {
     setSetting: (state, action: PayloadAction<SetSettingType>) => {

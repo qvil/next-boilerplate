@@ -7,15 +7,16 @@ Modern & Lightweight Next.js boilerplate
 - Next
 - Typescript
 - Absolute Imports
-- State Management: Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper))
+- State Management: Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk), Logger(redux-logger))
 - i18n(next-i18next)
 - Environment Variables(.env)
 - Style: Styled Components(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google)
+- Data Fetching:
+  - Client: SWR
+  - Server: Static Generation(Prerender with revalidate)
+
 <!--
-- Redux(Async(thunk))
 - Fetcher
-- Swr
-- Prerender with revalidate
 - Time
 - Test
 - Custom server
