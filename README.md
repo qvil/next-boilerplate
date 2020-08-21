@@ -14,10 +14,10 @@ Modern & Lightweight Next.js boilerplate
 - Data Fetching:
   - Client: SWR
   - Server: Static Generation(Prerender with revalidate)
+- Time([Day.js](https://day.js.org/))
 
 <!--
 - Fetcher
-- Time
 - Test
 - Custom server
 - Storybook?

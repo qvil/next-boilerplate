@@ -10,6 +10,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
     "axios": "^0.19.2",
+    "dayjs": "^1.8.34",
     "next": "9.5.2",
     "next-i18next": "^6.0.2",
     "next-redux-wrapper": "^6.0.2",

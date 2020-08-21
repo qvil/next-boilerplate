@@ -9,7 +9,7 @@ import { wrapper } from "src/redux/store";
 import { setSetting } from "src/redux/slices/settingSlice";
 import Link from "next/link";
 
-const features = ["i18n", "env", "styled-components", "data-fetching"];
+const features = ["i18n", "env", "styled-components", "data-fetching", " time"];
 
 interface IndexPageProps {}
 
