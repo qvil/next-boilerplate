@@ -15,8 +15,11 @@ Modern & Lightweight Next.js boilerplate
   - Client: SWR
   - Server: Static Generation(Prerender with revalidate)
 - Time([Day.js](https://day.js.org/))
+- [isMobile](https://github.com/kaimallea/isMobile)
+- Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client)
 
 <!--
+- TSLint
 - Fetcher
 - Test
 - Custom server
