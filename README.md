@@ -17,11 +17,12 @@ Modern & Lightweight Next.js boilerplate
 - Time([Day.js](https://day.js.org/))
 - [isMobile](https://github.com/kaimallea/isMobile)
 - Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client)
+- Prettier
+- ESLint
 
 <!--
-- TSLint
 - Fetcher
-- Test
+- Test - Jest
 - Custom server
 - Storybook?
   -->
@@ -29,7 +30,6 @@ Modern & Lightweight Next.js boilerplate
 ## Folder structure
 
 ```
-
 ├── public
 │ └── static
 │   └── locales
