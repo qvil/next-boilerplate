@@ -1,5 +1,5 @@
-import { NextPageContext, GetServerSidePropsContext } from "next";
 import isMobile, { isMobileResult } from "ismobilejs";
+import { NextPageContext, GetServerSidePropsContext } from "next";
 
 export const checkMobile = (
   ctx?: NextPageContext | GetServerSidePropsContext

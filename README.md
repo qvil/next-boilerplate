@@ -1,6 +1,6 @@
-# Nextjs Boilerplate
+# Next Boilerplate
 
-Modern & Lightweight Next.js boilerplate
+Modern, lightweight, production ready Next.js boilerplate
 
 ## Features
 
@@ -17,11 +17,11 @@ Modern & Lightweight Next.js boilerplate
 - Time([Day.js](https://day.js.org/))
 - [isMobile](https://github.com/kaimallea/isMobile)
 - Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client)
+- Test - [Jest](https://jestjs.io/)
+- ESLint
 
 <!--
-- TSLint
 - Fetcher
-- Test
 - Custom server
 - Storybook?
   -->
@@ -36,6 +36,8 @@ Modern & Lightweight Next.js boilerplate
 │     └── {locale}
 │       └── {namespace}.json
 ├── src
+│ └── __test__
+│ └── api
 │ └── components
 │ └── constants
 │ └── lib
@@ -60,7 +62,7 @@ Modern & Lightweight Next.js boilerplate
 
 ## Prerequisites
 
-- Node.js >= 10.13 (Recommended the latest version)
+- Node.js >= 12.x (Recommended the latest version)
 - (Yarn(Recommended))
 
 ## Install
@@ -94,6 +96,12 @@ yarn start
 # or
 npm start
 ```
+
+## 🌏 Supported Browser
+
+| <img src="https://user-images.githubusercontent.com/1215767/34348590-250b3ca2-ea4f-11e7-9efb-da953359321f.png" alt="IE / Edge" /> IE | <img src="https://img.utdstc.com/icons/microsoft-edge-windows.png:32" alt="IE / Edge" /> Edge | <img src="https://user-images.githubusercontent.com/1215767/34348383-9e7ed492-ea4d-11e7-910c-03b39d52f496.png" alt="Firefox" /> Firefox | <img src="https://user-images.githubusercontent.com/1215767/34348387-a2e64588-ea4d-11e7-8267-a43365103afe.png" alt="Chrome" /> Chrome | <img src="https://user-images.githubusercontent.com/1215767/34348394-a981f892-ea4d-11e7-9156-d128d58386b9.png" alt="Safari" /> Safari | <img src="https://cdn-production-opera-website.operacdn.com/staticfiles/assets/images/favicon/favicon-32x32.d80e4bdc6a9f.png" alt="Opera" /> Opera |
+| ------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| >= 11                                                                                                                                | >= 85                                                                                         | >= 80                                                                                                                                   | >= 84                                                                                                                                 | >= 13                                                                                                                                 | >= 70                                                                                                                                              |
 
 ## LICENSE
 
