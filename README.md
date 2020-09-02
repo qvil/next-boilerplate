@@ -4,21 +4,20 @@ Modern, lightweight, production ready Next.js boilerplate
 
 ## Features
 
-- Next
-- Typescript
-- Absolute Imports
-- State Management: Redux(RTK(Redux Toolkit), SSR(next-redux-wrapper), Async(thunk), Logger(redux-logger))
-- i18n(next-i18next)
+- [Next](nextjs.org)
+- Typescript(Absolute Imports)
+- State Management: Redux(RTK([Redux Toolkit](https://redux-toolkit.js.org/)), SSR([next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)), Async([thunk](https://github.com/reduxjs/redux-thunk)), Logger([redux-logger](https://github.com/LogRocket/redux-logger)))
+- i18n([next-i18next](https://github.com/isaachinman/next-i18next))
 - Environment Variables(.env)
-- Style: Styled Components(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google)
+- Style: [Styled Components](https://styled-components.com/)(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google)
 - Data Fetching:
-  - Client: SWR
+  - Client: [SWR](https://swr.vercel.app/)
   - Server: Static Generation(Prerender with revalidate)
 - Time([Day.js](https://day.js.org/))
 - [isMobile](https://github.com/kaimallea/isMobile)
 - Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client)
 - Test - [Jest](https://jestjs.io/)
-- ESLint
+- [ESLint](https://eslint.org/)
 
 <!--
 - Fetcher
