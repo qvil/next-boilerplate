@@ -27,11 +27,11 @@ const IndexPage: NextPage<IndexPageProps> = () => {
       <h2>Features</h2>
       <ol>
         {features.map((feature, index) => (
-          <Link key={index} href={feature}>
-            <a>
-              <li>{feature}</li>
-            </a>
-          </Link>
+          <li key={index}>
+            <Link href={feature}>
+              <a>{feature}</a>
+            </Link>
+          </li>
         ))}
       </ol>
     </div>

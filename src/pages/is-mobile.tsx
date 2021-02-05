@@ -2,7 +2,7 @@ import { NextPage, GetServerSideProps } from "next";
 import { useEffect, useState } from "react";
 import { isMobileResult } from "ismobilejs/types";
 
-import { checkMobile } from "src/lib/mobile";
+import { checkMobile } from "src/libs/mobile";
 
 interface IsMobilePageProps {
   isMobile?: isMobileResult["any"];

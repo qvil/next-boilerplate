@@ -4,8 +4,9 @@ Modern, lightweight, production ready Next.js boilerplate
 
 ## Features
 
-- [Next](nextjs.org)
-- Typescript(Absolute Imports)
+- [Next.js](nextjs.org) v10
+- Typescript
+- Absolute Imports - Refer to baseUrl of [tsconfig.json](./tsconfig.json)
 - State Management: Redux(RTK([Redux Toolkit](https://redux-toolkit.js.org/)), SSR([next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)), Async([thunk](https://github.com/reduxjs/redux-thunk)), Logger([redux-logger](https://github.com/LogRocket/redux-logger)))
 - i18n([next-i18next](https://github.com/isaachinman/next-i18next))
 - Environment Variables(.env)
@@ -39,7 +40,7 @@ Modern, lightweight, production ready Next.js boilerplate
 │ └── api
 │ └── components
 │ └── constants
-│ └── lib
+│ └── libs
 │   └── i18n.ts
 │ └── pages
 │   └── api

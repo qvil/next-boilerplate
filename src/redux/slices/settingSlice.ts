@@ -1,5 +1,5 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { defaultLanguage } from "src/lib/i18n";
+import { defaultLanguage } from "src/libs/i18n";
 import { LanguageType } from "src/types";
 
 const name = "setting";

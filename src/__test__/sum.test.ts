@@ -1,4 +1,4 @@
-import sum from "src/lib/sum";
+import sum from "src/libs/sum";
 
 describe("Suite of sum", () => {
   it("Test sum", () => {
