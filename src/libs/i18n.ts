@@ -9,8 +9,8 @@ import { LanguageType } from "src/types";
 // export const namespacesRequired = ["common", "settings", "validation"];
 export const namespacesRequired = ["common"];
 
-export const defaultLanguage: LanguageType = "en_US";
-export const otherLanguages: LanguageType[] = [defaultLanguage, "ko_KR"];
+export const defaultLanguage: LanguageType = "ko-KR";
+export const otherLanguages: LanguageType[] = ["en-US"];
 const NextI18NextInstance = new NextI18Next({
   defaultLanguage,
   otherLanguages,

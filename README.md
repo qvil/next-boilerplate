@@ -8,15 +8,15 @@ Modern, lightweight, production ready Next.js boilerplate
 - Typescript
 - Absolute Imports - Refer to baseUrl of [tsconfig.json](./tsconfig.json)
 - State Management: Redux(RTK([Redux Toolkit](https://redux-toolkit.js.org/)), SSR([next-redux-wrapper](https://github.com/kirill-konshin/next-redux-wrapper)), Async([thunk](https://github.com/reduxjs/redux-thunk)), Logger([redux-logger](https://github.com/LogRocket/redux-logger)))
-- i18n([next-i18next](https://github.com/isaachinman/next-i18next))
-- Environment Variables(.env)
-- Style: [Styled Components](https://styled-components.com/)(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google)
-- Data Fetching:
+- i18n([next-i18next](https://github.com/isaachinman/next-i18next), [Internationalized Routing](https://nextjs.org/docs/advanced-features/i18n-routing)) - [Live Demo](https://next-boilerplate.vercel.app/i18n)
+- Environment Variables(.env) - [Live Demo](https://next-boilerplate.vercel.app/env)
+- Style: [Styled Components](https://styled-components.com/)(JSS) - SSR, CSS Prop, GlobalStyle, Font(Google) - [Live Demo](https://next-boilerplate.vercel.app/styled-components)
+- Data Fetching - [Live Demo](https://next-boilerplate.vercel.app/data-fetching)
   - Client: [SWR](https://swr.vercel.app/)
   - Server: Static Generation(Prerender with revalidate)
-- Time([Day.js](https://day.js.org/))
-- [isMobile](https://github.com/kaimallea/isMobile)
-- Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client)
+- Time([Day.js](https://day.js.org/)) - [Live Demo](https://next-boilerplate.vercel.app/time)
+- [isMobile](https://github.com/kaimallea/isMobile) - [Live Demo](https://next-boilerplate.vercel.app/is-mobile)
+- Cookie - [nookies](https://github.com/maticzav/nookies#readme)(Server/Client) - [Live Demo](https://next-boilerplate.vercel.app/cookies)
 - Test - [Jest](https://jestjs.io/)
 - [ESLint](https://eslint.org/)
 

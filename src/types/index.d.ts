@@ -1,4 +1,4 @@
-export type LanguageType = "ko_KR" | "en_US";
+export type LanguageType = "ko-KR" | "en-US";
 export interface UserData {
   id: number;
   email: string;

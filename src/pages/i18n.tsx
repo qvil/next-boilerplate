@@ -1,15 +1,25 @@
+import Link from "next/link";
 import { NextPage } from "next";
 import { WithTranslation } from "next-i18next";
 import { useRouter } from "next/router";
-import { withTranslation } from "src/libs/i18n";
+
+import { i18n, withTranslation } from "src/libs/i18n";
 
 interface I18nPageProps extends WithTranslation {}
 
 const I18nPage: NextPage<I18nPageProps> = ({ t }) => {
   const { locale, locales, defaultLocale } = useRouter();
 
+  const handleClickLocale = (locale) => () => i18n.changeLanguage(locale);
+
   const renderLocales = () =>
-    locales?.map((locale, index) => <li key={index}>{locale}</li>);
+    locales?.map((locale, index) => (
+      <li key={index}>
+        <Link href="/i18n" locale={locale}>
+          <a onClick={handleClickLocale(locale)}>{locale}</a>
+        </Link>
+      </li>
+    ));
 
   return (
     <div>
