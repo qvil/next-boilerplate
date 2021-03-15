@@ -1,14 +1,14 @@
 import Link from "next/link";
 import { NextPage } from "next";
-import { WithTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useRouter } from "next/router";
+import { useTranslation } from "next-i18next";
 
-import { i18n, withTranslation } from "src/libs/i18n";
+interface I18nPageProps {}
 
-interface I18nPageProps extends WithTranslation {}
-
-const I18nPage: NextPage<I18nPageProps> = ({ t }) => {
+const I18nPage: NextPage<I18nPageProps> = () => {
   const { locale, locales, defaultLocale } = useRouter();
+  const { t, i18n } = useTranslation("common");
 
   const handleClickLocale = (locale) => () => i18n.changeLanguage(locale);
 
@@ -37,4 +37,10 @@ const I18nPage: NextPage<I18nPageProps> = ({ t }) => {
   );
 };
 
-export default withTranslation()(I18nPage);
+export const getStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale, ["common"])),
+  },
+});
+
+export default I18nPage;

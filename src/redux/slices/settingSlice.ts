@@ -1,5 +1,4 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
-import { defaultLanguage } from "src/libs/i18n";
 import { LanguageType } from "src/types";
 
 const name = "setting";
@@ -12,7 +11,7 @@ export interface SettingState {
 export type SetSettingType = { key: string; value: any };
 
 const initialState: SettingState = {
-  language: defaultLanguage,
+  language: "ko-KR",
 };
 
 const settingSlice = createSlice({

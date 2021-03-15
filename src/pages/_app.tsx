@@ -1,10 +1,10 @@
 // import App from "next/app";
 import type { AppProps /*, AppContext */ } from "next/app";
+import { appWithTranslation } from "next-i18next";
 
-import { wrapper } from "src/redux/store";
-import { appWithTranslation } from "src/libs/i18n";
-import Header from "src/components/Header";
 import GlobalStyle from "src/styles/GlobalStyle";
+import Header from "src/components/Header";
+import { wrapper } from "src/redux/store";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
