@@ -9,11 +9,21 @@ interface I18nPageProps {}
 const I18nPage: NextPage<I18nPageProps> = () => {
   const { locale, locales, defaultLocale, pathname } = useRouter();
   const { t, i18n } = useTranslation("common");
+  const lowercaseLocales = ["en-uk", "ko-kp"];
 
   const handleClickLocale = (locale) => () => i18n.changeLanguage(locale);
 
   const renderLocales = () =>
     locales?.map((locale, index) => (
+      <li key={index}>
+        <Link href={pathname} locale={locale}>
+          <a onClick={handleClickLocale(locale)}>{locale}</a>
+        </Link>
+      </li>
+    ));
+
+  const renderLowercaseLocales = () =>
+    lowercaseLocales?.map((locale, index) => (
       <li key={index}>
         <Link href={pathname} locale={locale}>
           <a onClick={handleClickLocale(locale)}>{locale}</a>
@@ -32,6 +42,9 @@ const I18nPage: NextPage<I18nPageProps> = () => {
       </p>
       <h3>Supported Locales</h3>
       <ul>{renderLocales()}</ul>
+      <div>{t("hello")}</div>
+      <h2>Lowercase i18n</h2>
+      <ul>{renderLowercaseLocales()}</ul>
       <div>{t("hello")}</div>
     </div>
   );
